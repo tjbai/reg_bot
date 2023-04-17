@@ -1,6 +1,6 @@
 import time
 import datetime
-
+import sys 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -11,9 +11,16 @@ from selenium.webdriver.common.keys import Keys
 
 
 def run():
-    desired_reg_time = input('REG TIME YYYY/MM/DD/HH/MM: ')
+    if len(sys.argv) != 4:
+        print("Usage: python reg.py <yyyy/mm/dd/hh/mm> <username> <password>")
+        return
+
+    desired_reg_time = sys.argv[1]
+    USERNAME = sys.argv[2]
+    PASSWORD = sys.argv[3]
+
     reg_time_arr = desired_reg_time.split('/')
-    pause_time = datetime.datetime(
+    PAUSE_TIME = datetime.datetime(
         int(reg_time_arr[0]),
         int(reg_time_arr[1]),
         int(reg_time_arr[2]),
@@ -21,9 +28,6 @@ def run():
         int(reg_time_arr[4]),
         0
     )
-
-    USERNAME = input('SIS USER: ')
-    PASSWORD = input('SIS PW: ')
 
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
@@ -55,7 +59,7 @@ def run():
     print('waiting...')
     while True:
         current_time = datetime.datetime.now()
-        if current_time >= pause_time:
+        if current_time >= PAUSE_TIME:
             reg_button.click()
             print(f'REGISTRATION ATTEMPTED AT {datetime.datetime.now()}')
             break
