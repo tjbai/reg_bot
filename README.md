@@ -14,7 +14,7 @@
 4. Install all the dependencies with `pip3 install -r requirements.txt`
 5. Now you should be able to run the script with `python3 reg.py <list of arguments>`
 
-Once you have this all setup, I'd recommend doing a test run just to verify that everything works correctly! Also,
+Once you have this all setup, I'd recommend doing a test run just to verify that everything works correctly. Also,
 the first time you use it some extra dependencies might have to be installed at runtime so you'd preferably want to take care
 of that before registration.
 
