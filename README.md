@@ -22,7 +22,7 @@ of that before registration.
 You want to supply the relevant time, username, and password as a list of arguments after `python reg.py`
 1. The first argument is the time at which you want the bot to attempt registration. Once you activate the script, it will open a browser and wait until that time.
 The format for this is <YYYY/MM/DD/HH/MM>. It uses military time, but this shouldn't matter because registration is normally at 7 am.
-2. The second argument is simply your SIS username, which should be YOUR_ID followed by @jh.edu
+2. The second argument is your SIS username, which should be YOUR_ID followed by @jh.edu
 3. The last argument is the password to your Hopkins email/SIS
 
 ## Example
