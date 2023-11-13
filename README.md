@@ -18,11 +18,14 @@ Once you have this all setup, I'd recommend doing a test run just to verify that
 the first time you use it some extra dependencies might have to be installed at runtime so you'd preferably want to take care
 of that before registration.
 
+Note that you can technically run the script and have it idle for an arbitrary amount of time before course registration, but
+I'd highly recommend just running the command 5-10 minutes before registration and actively monitoring it. 
+
 ## Arguments
 You want to supply the relevant time, username, and password as a list of arguments after `python reg.py`
 1. The first argument is the time at which you want the bot to attempt registration. Once you activate the script, it will open a browser and wait until that time.
 The format for this is <YYYY/MM/DD/HH/MM>. It uses military time, but this shouldn't matter because registration is normally at 7 am.
-2. The second argument is your SIS username, which should be YOUR_ID followed by @jh.edu
+2. The second argument is your SIS username, which should be your hopkins ID followed by @jh.edu
 3. The last argument is the password to your Hopkins email/SIS
 
 ## Example
