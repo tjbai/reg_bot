@@ -2,7 +2,7 @@
 
 ## Prerequisites:
 - Knowledge of how to open the terminal and run commands
-- Verify that you have `python3` installed by running `python --version`
+- Verify that you have `python3` installed by running `python3 --version`
   - See [this link](https://www.python.org/downloads/) for installations
 - Verify that you have `git` installed by running `git --version`
   - Most of you are on Mac so `brew install git` should do the trick if it's not already installed
