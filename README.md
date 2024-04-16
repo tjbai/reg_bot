@@ -9,7 +9,7 @@
 
 ## Instructions
 1. Copy the URL to this repository and run `git clone <this link>`
-2. Navigate into the repository with `cd reg_bot`
+2. Navigate into the repository with `cd regbot`
 3. Create a virtual environment with `python3 -m venv venv` and activate it with `source venv/bin/activate`
 4. Install all the dependencies with `pip3 install -r requirements.txt`
 5. Now you should be able to run the script with `python3 reg.py <list of arguments>`
