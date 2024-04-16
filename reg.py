@@ -52,6 +52,7 @@ def main():
 
     print('polling...')
     while True:
+        time.sleep(0.005)
         if datetime.now() >= reg_time:
             reg_button.click()
             print(f'fired at {datetime.now()}')
